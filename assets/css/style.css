@@ -27,17 +27,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #1bb102;
-  --secondary-color: #0f6300;
-
     --color-black: hsl(0, 0%, 10%);
     --color-darks: hsl(0, 0%, 25%);
     --color-greys: hsl(0, 0%, 60%);
     --color-light: hsl(0, 0%, 95%);
     --color-white: hsl(0, 0%, 100%);
-    --color-green-100: hsl(152, 24%, 50%);
-    --color-green-200: hsl(152, 24%, 35%);
-    --color-green-300: hsl(152, 24%, 25%);
+    --color-green-100: hsl(111, 98%, 50%);
+    --color-green-200: hsl(111, 98%, 35%);
+    --color-green-300: hsl(111, 98%, 25%);
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
     --display-100: clamp(0.88rem, calc(0.8rem + 0.38vw), 1rem);
     --display-200: clamp(1rem, calc(0.96rem + 0.18vw), 1.13rem);
     --display-300: clamp(1.2rem, calc(1.11rem + 0.43vw), 1.5rem);
@@ -92,6 +91,11 @@ button {
   background: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-green-300);
+}
+
 ul {
   list-style: none;
 }
@@ -116,13 +120,13 @@ img {
 }
 
 section {
-margin: 0 auto;
+  margin: 0 auto;
   padding: 5rem 0 2rem;
 }
 
 footer {
   background-color: var(--color-black);
-  color: var(--color-white);
+  color: var(--color-greys);
 }
 
 /*----------------------------------------*/
@@ -148,7 +152,7 @@ footer {
   line-height: 1.25;
   letter-spacing: -1px;
   text-transform: uppercase;
-  color: var(--color-green-200);
+  color: var(--color-green-300);
 }
 
 .header {
@@ -222,10 +226,11 @@ footer {
   padding: 0.65rem 1.5rem;
   border-radius: 3rem;
   color: var(--color-white);
-  background-color: var(--color-green-200);
+  background-color: var(--color-green-300);
   box-shadow: var(--shadow-medium);
   transition: all 0.3s ease-in-out;
 }
+
 @media only screen and (min-width: 48rem) {
   .menu {
     position: relative;
@@ -306,7 +311,7 @@ footer {
 /*----------------------------------------*/
 .hero {
   height: 400px;
-  background-color: var(--primary-color);
+  background-color: var(--color-green-200);
   color: #fff;
   position: relative;
 }
@@ -378,12 +383,17 @@ footer {
 .apps img{
   height: 30px;
   width: 30px;
+  margin-right: 10px;
 }
 
 .apps .card {
   text-align: center;
   margin: 10px 10px 20px;
   transition: transform 0.2s ease-in;
+}
+
+.card a {
+  display: flex;
 }
 
 .apps .card h4 {
@@ -504,8 +514,8 @@ background: rgba(0,0,0,0) linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.62)
 
 /* footer */
 
-.footer a{
-  color: var(--primary-color);
+.footer h4{
+  color: var(--color-greys);
 }
 
 .footer-social-media .flex{
@@ -531,9 +541,7 @@ background: rgba(0,0,0,0) linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.62)
   .brand {
     font-size: 1rem;
   }
-  .menu-block {
-    font-size: 0.7rem;
-  }
+
   .grid, .hero .grid, .footer .grid{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -568,10 +576,6 @@ background: rgba(0,0,0,0) linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.62)
 
   .apps {
     margin-bottom:20rem;
-  }
-
-  .stacked-txt li a{
-    font-size: 1rem;
   }
 
   .locations .grid > *:first-child {

@@ -18,7 +18,7 @@
     display: inline-block;
     padding: 10px 30px;
     cursor: pointer;
-    background: var(--primary-color);
+    background: var(--color-green-100);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -36,13 +36,13 @@
   /* Backgrounds & colored buttons */
   .bg-primary,
   .btn-primary {
-    background-color: var(--primary-color);
+    background-color: var(--color-green-100);
     color: #fff;
   }
   
   .bg-secondary,
   .btn-secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--color-green-300);
     color: #fff;
   }
   
@@ -69,11 +69,11 @@
   
   /* Text colors */
   .text-primary {
-    color: var(--primary-color);
+    color: var(--color-green-100);
   }
   
   .text-secondary {
-    color: var(--secondary-color);
+    color: var(--color-green-300);
   }
   
   .text-dark {
@@ -233,3 +233,8 @@
     padding: 4rem;
   }
   
+  .hidden {
+    visibility: hidden;
+    height: 0;
+    width: auto;
+  }
