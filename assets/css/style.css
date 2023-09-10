@@ -93,7 +93,7 @@ button {
 
 a {
   text-decoration: none;
-  color: var(--color-green-300);
+  color: var(--color-green-200);
 }
 
 ul {
@@ -537,6 +537,10 @@ background: rgba(0,0,0,0) linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.62)
 
 /* Tablets and under */
 @media (max-width: 768px) {
+
+  .categories-main .stacked-txt{
+    font-size: var(--display-100);
+  }
   
   .brand {
     font-size: 1rem;
@@ -575,7 +579,7 @@ background: rgba(0,0,0,0) linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,.62)
   }
 
   .apps {
-    margin-bottom:20rem;
+    margin-bottom:25rem;
   }
 
   .locations .grid > *:first-child {
