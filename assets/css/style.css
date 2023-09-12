@@ -550,7 +550,7 @@ footer {
     padding: 2px 0;
   }
 
- .menu-item:hover > ul, .dropdown:hover, .profile:hover > svg {
+ .menu-item:hover > ul, .dropdown:hover, ul li:hover > ul {
     display: block;
   }
 
