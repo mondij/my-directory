@@ -44,7 +44,6 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
     rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="./assets/css/utilities.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <script> var MDConfig = { baseUrl: '', csrfTokenName: 'csrf_test_name', csrfCookieName: 'csrf_cookie_name', sysLangId: '1', isRecaptchaEnabled: '1' }; </script>
 </head>
@@ -93,17 +92,126 @@
     </ul>
   </div> -->
 
-  <header class="header">
+
+  <header class="king-headerf">
+    <div class="king-header">
+      <div class="header-left">
+        <div class="king-left-toggle" data-toggle="dropdown" data-target=".leftmenu" aria-expanded="false"
+          role="button"><span class="left-toggle-line"></span></div>
+        <div class="king-logo">
+          <a href="./" class="king-logo-link">Rwandan beauties</a>
+        </div>
+      </div>
+      <div class="header-middle">
+        <ul class="king-nav-head-list">
+          <li class="king-nav-head-item king-nav-head-home">
+            <a href="./" class="king-nav-head-link king-nav-head-selected"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="king-nav-head-item king-nav-head-type">
+            <a href="./type" class="king-nav-head-link"><i class="fas fa-compass"></i> Explore</a>
+          </li>
+        </ul>
+        <div class="king-nav-head-clear">
+        </div>
+        <div class="menutoggle" data-toggle="dropdown" data-target=".king-mega-menu" aria-expanded="false"><i
+            class="fas fa-angle-down"></i></div>
+        <div class="king-mega-menu">
+        </div>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li>
+            <a class="reglink hreg" href="./register">Register</a>
+          </li>
+          <li>
+            <div class="reglink" data-toggle="modal" data-target="#loginmodal" role="button" title="Login"><i
+                class="fa-solid fa-user"></i></div>
+          </li>
+          <li>
+            <div class="king-submit">
+              <span class="kingadd" data-toggle="dropdown" data-target=".king-submit" aria-expanded="false"
+                role="button"><i class="fa-solid fa-circle-plus"></i></span>
+              <div class="king-dropdown2">
+                <a href="./news" class="kingaddnews"><i class="fas fa-newspaper"></i> News</a>
+                <a href="./submit" class="kingaddimg"><i class="fas fa-image"></i> Image</a>
+                <a href="./video" class="kingaddvideo"><i class="fas fa-video"></i> Video</a>
+                <a href="./poll" class="kingaddpoll"><i class="fas fa-align-left"></i> Poll</a>
+                <a href="./list" class="kingaddlist"><i class="fas fa-bars"></i> List</a>
+                <a href="./trivia" class="kingaddtrivia"><i class="fas fa-times"></i> Trivia Quiz</a>
+                <a href="./music" class="kingaddmusic"><i class="fas fa-headphones-alt"></i> Music</a>
+              </div>
+            </div>
+          </li>
+          <li class="search-button"><span data-toggle="dropdown" data-target=".king-search" aria-expanded="false"
+              class="search-toggle"><i class="fas fa-search fa-lg"></i></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="leftmenu kingscroll">
+      <div class="leftmenu-left">
+        <span>
+          <button type="button" class="king-left-close" data-dismiss="modal" aria-label="Close"></button>
+        </span>
+        <span>
+          <input type="checkbox" id="king-night" class="hide"><label for="king-night" class="king-nightb"><i
+              class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></label>
+        </span>
+      </div>
+      <div class="king-nav-main">
+        <ul class="king-nav-main-list">
+          <li class="king-nav-main-item king-nav-main-home">
+            <a href="./" class="king-nav-main-link king-nav-main-selected"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li class="king-nav-main-item king-nav-main-video">
+            <a href="./video" class="king-nav-main-link"><i class="fas fa-video"></i>Submit Video</a>
+          </li>
+          <li class="king-nav-main-item king-nav-main-ask">
+            <a href="./submit" class="king-nav-main-link"><i class="fas fa-image"></i>Submit Image</a>
+          </li>
+          <li class="king-nav-main-item king-nav-main-tag">
+            <a href="./tags" class="king-nav-main-link"><i class="fas fa-hashtag"></i>Tags</a>
+          </li>
+          <li class="king-nav-main-item king-nav-main-user">
+            <a href="./users" class="king-nav-main-link"><i class="fas fa-users"></i>Top Users</a>
+          </li>
+        </ul>
+        <div class="king-nav-main-clear">
+        </div>
+      </div>
+    </div>
+    <div class="king-search">
+      <div class="king-search-in">
+        <form method="get" action="./search">
+
+          <input type="text" name="q" value="" class="king-search-field" placeholder="Search"
+            onkeyup="showResult(this.value)" autocomplete="off">
+          <button type="submit" class="king-search-button"><i class="fas fa-search fa-lg"></i></button>
+        </form>
+        <div id="king_live_results" class="liveresults">
+          <h3>Discover</h3>
+          <a class="sresults" href="./tag/nyambo">nyambo</a>
+          <a class="sresults" href="./tag/gladys">gladys</a>
+          <a class="sresults" href="./tag/darina">darina</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- <header class="header">
     <div class="container">
       <nav class="navbar">
-        <div class="burger" id="burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
+        <div class="header-left">
+          <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          <a href="/" class="brand">Finalheights</a>
         </div>
-        <a href="/" class="brand">Finalheights</a>
         <span class="overlay"></span>
-        <div class="menu" id="menu">
+        <div class="header-middle">
           <ul class="menu-inner">
             <li class="menu-item"><a class="menu-link" href="">Home</a></li>
             <li class="menu-item"><a class="menu-link" href="/categories">All services</a></li>
@@ -125,43 +233,89 @@
             <li class="menu-item"><a class="menu-link" href="https://hereinuganda.com">Our Magazine</a></li>
           </ul>
         </div>
-        <a href="/list-business" class="menu-block">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
-          </svg>
-          <!-- <span>Add Listing</span> -->
-        </a>
-        <ul class="">
-          <li class="profile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-              </svg>
-              <ul class="dropdown">
+        <div class="header-right">
+          <ul>
+            <li>
+              <a class="reglink hreg" href="./register">Register</a>
+            </li>
+            <li>
+              <div class="reglink" data-toggle="modal" data-target="#loginmodal" role="button" title="Login">
+                <i class="fa-solid fa-user"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                  </svg></i>
+              </div>
+            </li>
+            <li>
+              <div class="king-submit open">
+                <span class="kingadd" data-toggle="dropdown" data-target=".king-submit" aria-expanded="false"
+                  role="button">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                  </svg>
+
+                </span>
+                <div class="king-dropdown2">
+                  <a href="./news" class="kingaddnews"><i class="fas fa-newspaper"></i> News</a>
+                  <a href="./submit" class="kingaddimg"><i class="fas fa-image"></i> Image</a>
+                  <a href="./video" class="kingaddvideo"><i class="fas fa-video"></i> Video</a>
+                  <a href="./poll" class="kingaddpoll"><i class="fas fa-align-left"></i> Poll</a>
+                  <a href="./list" class="kingaddlist"><i class="fas fa-bars"></i> List</a>
+                  <a href="./trivia" class="kingaddtrivia"><i class="fas fa-times"></i> Trivia Quiz</a>
+                  <a href="./music" class="kingaddmusic"><i class="fas fa-headphones-alt"></i> Music</a>
+                </div>
+              </div>
+            </li>
+            <li class="search-button"><span data-toggle="dropdown" data-target=".king-search" aria-expanded="false"
+                class="search-toggle"><i class="fas fa-search fa-lg"></i></span></li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <ul>
+
+            <li class="menu-item"><a class="menu-link" href="/signup">Register</a></li>
+            <li class="profile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
                 <li class="menu-item"><a class="menu-link" href="#">Login</a></li>
-                <li class="menu-item"><a class="menu-link" href="/signup">Register</a></li>
-                <li class="menu-item">
-                  <form action="/md-switch-mode" method="post"> <input type="hidden" name="csrf_test_name"
-                      value="efbfead7e9517e1291dd088848779d79">
-                    <button class="menu-link" type="submit" name="dark_mode" value="1" class="btn-switch-mode"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#666666"
-                        class="inf-svg-icon bi bi-moon-fill dark-mode-icon" viewBox="0 0 16 16">
-                        <path
-                          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
-                        </path>
-                      </svg></button>
-                  </form>
-                </li>
-              </ul>
-          </li>
-          </a>
-        </ul>
+
+            <li><a href="/list-business" class="menu-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                </svg>
+                <span>Add Listing</span>
+              </a>
+            </li>
+            <ul class="dropdown">
+              <li class="menu-item">
+                <form action="/md-switch-mode" method="post"> <input type="hidden" name="csrf_test_name"
+                    value="efbfead7e9517e1291dd088848779d79">
+                  <button class="menu-link" type="submit" name="dark_mode" value="1" class="btn-switch-mode"> <svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#666666"
+                      class="inf-svg-icon bi bi-moon-fill dark-mode-icon" viewBox="0 0 16 16">
+                      <path
+                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
+                      </path>
+                    </svg></button>
+                </form>
+              </li>
+            </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
-  </header>
+  </header> -->
   <main>
     <section class="hero">
       <div class="container grid">
@@ -1229,7 +1383,7 @@
             </svg> Categories</h2>
         </div>
 
-        <div class="grid">
+        <div class="cat-list">
           <div class="stacked">
             <img class="media" src="./assets/img/categories/bed-g41b34d2ff_1280.webp" alt="Accommodation">
             <div class="stacked-txt">
