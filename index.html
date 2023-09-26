@@ -45,10 +45,12 @@
     rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/night.css">
   <script> var MDConfig = { baseUrl: '', csrfTokenName: 'csrf_test_name', csrfCookieName: 'csrf_cookie_name', sysLangId: '1', isRecaptchaEnabled: '1' }; </script>
 </head>
 
-<body>
+<body class="king-template-home king-body-js-on">
   <script type="application/ld+json">
     [{ "@context": "http://schema.org", "@type": "Organization", "url": "https://hereinuganda.com/", "logo": { "@type": "ImageObject", "width": 180, "height": 50, "url": "/uploads/logos/logo_white.png" }, "sameAs": ["https://facebook.com/theeyeug", "https://twitter.com/TheeyeUg", "https://pinterest.com/TheeyeUg", "https://instagram.com/theeye_ug", "https://linkedin.com/company/theeye-uganda"] }, { "@context": "http://schema.org", "@type": "WebSite", "name": "Finalheights Uganda", "url": "", "potentialAction": { "@type": "SearchAction", "target": "/listings?search={search_term_string}", "query-input": "required name=search_term_string" } } ] 
   </script>
@@ -92,6 +94,18 @@
     </ul>
   </div> -->
 
+  <!-- Cookie notice -->
+  <div class="king-notice" id="notice_gdpr" style="display: none;">
+    <form method="post" action="./">
+      Our website uses cookies to improve your experience.
+      <p></p>
+      Learn more <a href="https://demos.kingthemes.net/privacy-policy">Privacy Policy</a>
+      <button name="notice_gdpr" onclick="return qa_notice_click(this);" type="submit"
+        class="king-notice-close-button"><i class="far fa-times-circle"></i></button>
+      <input type="hidden" name="code" value="0-1695666425-3c17c9232c339ebcacdbd060f2fa06d1a7b45e4d">
+    </form>
+  </div>
+  <!-- Cookie notice -->
 
   <header class="king-headerf">
     <div class="king-header">
@@ -99,7 +113,7 @@
         <div class="king-left-toggle" data-toggle="dropdown" data-target=".leftmenu" aria-expanded="false"
           role="button"><span class="left-toggle-line"></span></div>
         <div class="king-logo">
-          <a href="./" class="king-logo-link">Rwandan beauties</a>
+          <a href="./" class="king-logo-link">Finalheights</a>
         </div>
       </div>
       <div class="header-middle">
@@ -316,7 +330,7 @@
       </nav>
     </div>
   </header> -->
-  <main>
+  <div id="king-body-wrapper" class="king-body-in">
     <section class="hero">
       <div class="container grid">
         <div class="hero-text">
@@ -1171,37 +1185,360 @@
       <!-- <div style="z-index: -1;">
       <img src="./assets/img/searchbg/Blurred-city-street-world-wallpaper.webp" alt="">
     </div> -->
-
     </section>
 
-    <section class="apps">
-      <div class="container">
-        <h2 class=" text-center">Browse our apps</h2>
-        <ul class="aps">
-          <li class="card"><a href="/categories"><img src="./assets/img/icon/shop.png" alt="">
-              All Services</a></li>
-          <li class="card"><a href="/service-experts"><img src="./assets/img/icon/expert.png" alt=""> Service
-              Experts</a>
-          </li>
-          <li class="card"><a href="/jobs"><img src="./assets/img/icon/employee.png" alt="">
-              Jobs</a></li>
-          <li class="card"><a href="/places"><img src="./assets/img/icon/hot-air-balloon.png" alt="">Explore Travel
-            </a></li>
-          <li class="card"><a href="/news"><img src="./assets/img/icon/news.png" alt=""> News
-              &amp; Magazines</a></li>
-          <li class="card"><a href="/events"><img src="./assets/img/icon/calendar.png" alt="">
-              Events</a></li>
-          <li class="card"><a href="/products"><img src="./assets/img/icon/cart.png" alt="">
-              Products</a></li>
-          <li class="card"><a href="/coupons"><img src="./assets/img/icon/coupons.png" alt="">
-              Coupon &amp; deals </a></li>
-          <li class="card"><a href="/blog-posts"><img src="./assets/img/icon/blog1.png" alt="">
-              Blogs</a></li>
-          <li class="card"><a href="/community"><img src="./assets/img/icon/11.png" alt="">
-              Community</a></li>
-        </ul>
+    <!-- <h2 class=" text-center">Browse our apps</h2> -->
+    <ul class="king-nav-sub-list">
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/categories">
+          <!-- <img src="./assets/img/icon/shop.png" alt=""> -->
+          All Services</a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/service-experts">
+          <!-- <img src="./assets/img/icon/expert.png" alt="">  -->
+          Service Experts</a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/jobs">
+          <!-- <img src="./assets/img/icon/employee.png" alt=""> -->
+          Jobs</a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/places">
+          <!-- <img src="./assets/img/icon/hot-air-balloon.png" alt=""> -->
+          Explore Travel
+        </a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/news">
+          <!-- <img src="./assets/img/icon/news.png" alt=""> -->
+          News &amp; Magazine</a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/events">
+          <!-- <img src="./assets/img/icon/calendar.png" alt=""> -->
+          Events</a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/products">
+          <!-- <img src="./assets/img/icon/cart.png" alt=""> -->
+          Products</a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/coupons">
+          <!-- <img src="./assets/img/icon/coupons.png" alt=""> -->
+          Coupon &amp; deals </a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/blog-posts">
+          <!-- <img src="./assets/img/icon/blog1.png" alt=""> -->
+          Blogs</a>
+      </li>
+      <li class="king-nav-sub-item king-nav-sub-recent">
+        <a class="king-nav-sub-link" href="/community">
+          <!-- <img src="./assets/img/icon/11.png" alt=""> -->
+          Community</a>
+      </li>
+    </ul>
+
+    <div class="king-main full-page">
+      <div class="king-main-in">
+        <div class="king-part-q-list king-inner">
+          <div class="container with-side" style="position: relative; height: 4292.86px;">
+            <div class="grid-sizer"></div>
+
+            <div class="king-featureds grids-6">
+              <div class="king-featured-grid" style="grid-auto-rows: 170px;">
+                <div class="featured-posts grid-1">
+                  <a href="https://demos.kingthemes.net/themes/kingtube/1/a-rather-lovely-thing">
+                    <div class="featured-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/themes/kingtube/king-include/uploads/2021/03/1971852650.png&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="featured-content">
+                    <a href="https://demos.kingthemes.net/themes/kingtube/1/a-rather-lovely-thing"
+                      class="featured-title">A rather lovely thing</a>
+                    <div class="featured-meta">
+                      <span><i class="fa fa-eye" aria-hidden="true"></i> 5020 </span>
+                      <span><i class="fa fa-comment" aria-hidden="true"></i> 0</span>
+                      <span><i class="fas fa-chevron-up"></i> 0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="featured-posts grid-2">
+                  <a href="https://demos.kingthemes.net/themes/kingtube/15/one-more-beer">
+                    <div class="featured-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/themes/kingtube/king-include/uploads/2021/03/208563760.png&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="featured-content">
+                    <a href="https://demos.kingthemes.net/themes/kingtube/15/one-more-beer" class="featured-title">One
+                      more beer</a>
+                    <div class="featured-meta">
+                      <span><i class="fa fa-eye" aria-hidden="true"></i> 4680 </span>
+                      <span><i class="fa fa-comment" aria-hidden="true"></i> 0</span>
+                      <span><i class="fas fa-chevron-up"></i> 0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="featured-posts grid-3">
+                  <a href="https://demos.kingthemes.net/themes/kingtube/16/soundcloud-eat-sleep-deep-repeat">
+                    <div class="featured-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/themes/kingtube/king-include/uploads/2021/03/1059131575.jpg&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="featured-content">
+                    <a href="https://demos.kingthemes.net/themes/kingtube/16/soundcloud-eat-sleep-deep-repeat"
+                      class="featured-title">Soundcloud Eat Sleep Deep Repeat</a>
+                    <div class="featured-meta">
+                      <span><i class="fa fa-eye" aria-hidden="true"></i> 2364 </span>
+                      <span><i class="fa fa-comment" aria-hidden="true"></i> 1</span>
+                      <span><i class="fas fa-chevron-up"></i> 0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="featured-posts grid-4">
+                  <a href="https://demos.kingthemes.net/themes/kingtube/27/music-playlist-demo">
+                    <div class="featured-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/themes/kingtube/king-include/uploads/2022/05/165972-pexels-henry.jpg&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="featured-content">
+                    <a href="https://demos.kingthemes.net/themes/kingtube/27/music-playlist-demo"
+                      class="featured-title">Music playlist demo</a>
+                    <div class="featured-meta">
+                      <span><i class="fa fa-eye" aria-hidden="true"></i> 1996 </span>
+                      <span><i class="fa fa-comment" aria-hidden="true"></i> 0</span>
+                      <span><i class="fas fa-chevron-up"></i> 0</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="load-nomore" id="ias_noneleft_1695672023135"><span>End of the page.</span></div>
+          </div>
+        </div>
+        <div class="king-page-links">
+          <ul class="king-page-links-list" style="display: none;">
+            <li class="king-page-links-item">
+              <span class="king-page-selected">1</span>
+            </li>
+            <li class="king-page-links-item">
+              <a href="./?start=15" class="king-page-link">2</a>
+            </li>
+            <li class="king-page-links-item">
+              <a href="./?start=15" class="king-page-next"> »</a>
+            </li>
+          </ul>
+          <div class="king-page-links-clear">
+          </div>
+        </div>
+      </div> <!-- king-main-in -->
+      <div class="rightsidebar">
+        <div class="king-widgets-side king-widgets-side-top">
+          <div class="king-widget-side king-widget-side-top">
+            <div class="tagcloud king-widget-wb">
+              <div class="widget-title">
+                Tag Clouds
+              </div>
+              <a href="./tag/video">video</a>
+              <a href="./tag/music">music</a>
+              <a href="./tag/art">art</a>
+              <a href="./tag/vimeo">vimeo</a>
+              <a href="./tag/instagram">instagram</a>
+              <a href="./tag/design">design</a>
+              <a href="./tag/list">list</a>
+              <a href="./tag/poll">poll</a>
+              <a href="./tag/playlist">playlist</a>
+              <a href="./tag/mp4">mp4</a>
+              <a href="./tag/news">news</a>
+              <a href="./tag/soundcloud">soundcloud</a>
+              <a href="./tag/wallpaper">wallpaper</a>
+              <a href="./tag/image">image</a>
+              <a href="./tag/king">king</a>
+              <a href="./tag/nature">nature</a>
+              <a href="./tag/flower">flower</a>
+              <a href="./tag/multiple">multiple</a>
+            </div>
+          </div>
+          <div class="king-widget-side king-widget-side-top">
+            <div class="ilgilit">
+              <div class="widget-title">
+                Top Videos
+              </div>
+              <div class="ilgili">
+                <div class="simple-posts"><a href="https://demos.kingthemes.net/43/rolling-eyes-mp4-demo">
+                    <div class="simple-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/king-include/uploads/2022/04/843936.jpg&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="simple-post-content"><a href="https://demos.kingthemes.net/43/rolling-eyes-mp4-demo"
+                      class="simple-post-title">Rolling eyes mp4 demo</a></div>
+                  <div class="simple-post-meta"><span><i class="fa fa-eye" aria-hidden="true"></i> 211 </span><span><i
+                        class="fa fa-comment" aria-hidden="true"></i> 0</span><span><i class="fas fa-chevron-up"></i>
+                      0</span></div>
+                </div>
+                <div class="simple-posts"><a href="https://demos.kingthemes.net/11/spotify-lo-fi-beats-playlist">
+                    <div class="simple-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/king-include/uploads/2021/03/341800434.jpg&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="simple-post-content"><a
+                      href="https://demos.kingthemes.net/11/spotify-lo-fi-beats-playlist"
+                      class="simple-post-title">Spotify Lo-Fi Beats playlist</a></div>
+                  <div class="simple-post-meta"><span><i class="fa fa-eye" aria-hidden="true"></i> 303 </span><span><i
+                        class="fa fa-comment" aria-hidden="true"></i> 0</span><span><i class="fas fa-chevron-up"></i>
+                      0</span></div>
+                </div>
+                <div class="simple-posts"><a href="https://demos.kingthemes.net/15/one-more-beer">
+                    <div class="simple-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/king-include/uploads/2021/03/208563760.png&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="simple-post-content"><a href="https://demos.kingthemes.net/15/one-more-beer"
+                      class="simple-post-title">One more beer</a></div>
+                  <div class="simple-post-meta"><span><i class="fa fa-eye" aria-hidden="true"></i> 317 </span><span><i
+                        class="fa fa-comment" aria-hidden="true"></i> 0</span><span><i class="fas fa-chevron-up"></i>
+                      0</span></div>
+                </div>
+                <div class="simple-posts"><a href="https://demos.kingthemes.net/22/gfycat-gif-post">
+                    <div class="simple-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/king-include/uploads/2021/03/396499759.gif&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="simple-post-content"><a href="https://demos.kingthemes.net/22/gfycat-gif-post"
+                      class="simple-post-title">gfycat gif post</a></div>
+                  <div class="simple-post-meta"><span><i class="fa fa-eye" aria-hidden="true"></i> 118 </span><span><i
+                        class="fa fa-comment" aria-hidden="true"></i> 0</span><span><i class="fas fa-chevron-up"></i>
+                      0</span></div>
+                </div>
+                <div class="simple-posts"><a href="https://demos.kingthemes.net/18/instagram-reels-video">
+                    <div class="simple-post">
+                      <div class="king-box-bg loaded"
+                        style="background-image: url(&quot;https://demos.kingthemes.net/king-include/uploads/2021/03/352891-31327.jpg&quot;);">
+                      </div>
+                    </div>
+                  </a>
+                  <div class="simple-post-content"><a href="https://demos.kingthemes.net/18/instagram-reels-video"
+                      class="simple-post-title">Instagram REELS video</a></div>
+                  <div class="simple-post-meta"><span><i class="fa fa-eye" aria-hidden="true"></i> 123 </span><span><i
+                        class="fa fa-comment" aria-hidden="true"></i> 0</span><span><i class="fas fa-chevron-up"></i>
+                      0</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="king-widget-side king-widget-side-top">
+            <div class="king-widget-wb">
+              <div class="widget-title">
+                Categories
+              </div>
+              <div class="king-cat-side">
+                <ul class="king-nav-cat-list king-nav-cat-list-1">
+                  <li class="king-nav-cat-item king-nav-cat-all">
+                    <a href="./" class="king-nav-cat-link king-nav-cat-selected">All</a>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-art">
+                    <a href="./art" class="king-nav-cat-link"><span style="color:#c7f8ff"><i
+                          class="fas fa-palette"></i></span>Art</a>
+                    <span class="king-nav-cat-note">(4)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-entertainment">
+                    <a href="./entertainment" class="king-nav-cat-link"><span style="color:#9391fd"><i
+                          class="fas fa-glass-cheers"></i></span>Entertainment</a>
+                    <span class="king-nav-cat-note">(1)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-games">
+                    <a href="./games" class="king-nav-cat-link"><span style="color:#44ff00"><i
+                          class="fas fa-gamepad"></i></span>Games</a>
+                    <span class="king-nav-cat-note">(1)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-history">
+                    <a href="./history" class="king-nav-cat-link"><span style="color:#eab171"><i
+                          class="fas fa-landmark"></i></span>History</a>
+                    <span class="king-nav-cat-note">(1)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-how-to">
+                    <a href="./how-to" class="king-nav-cat-link"><span style="color:#fbe44b"><i
+                          class="far fa-question-circle"></i></span>How to</a>
+                    <span class="king-nav-cat-note">(0)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-internet">
+                    <a href="./internet" class="king-nav-cat-link"><span style="color:#747df6"><i
+                          class="fas fa-globe-asia"></i></span>Internet</a>
+                    <span class="king-nav-cat-note">(4)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-music-cat">
+                    <a href="./music-cat" class="king-nav-cat-link"><span style="color:#50f763"><i
+                          class="fas fa-headphones-alt"></i></span>Music</a>
+                    <span class="king-nav-cat-note">(5)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-nature">
+                    <a href="./nature" class="king-nav-cat-link"><span style="color:#84f588"><i
+                          class="fas fa-tree"></i></span>Nature</a>
+                    <span class="king-nav-cat-note">(2)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-sports">
+                    <a href="./sports" class="king-nav-cat-link"><span style="color:#f92bfd"><i
+                          class="fas fa-basketball-ball"></i></span>Sports</a>
+                    <span class="king-nav-cat-note">(1)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-technology">
+                    <a href="./technology" class="king-nav-cat-link"><span style="color:#000000"><i
+                          class="fas fa-microchip"></i></span>Technology</a>
+                    <span class="king-nav-cat-note">(4)</span>
+                  </li>
+                  <li class="king-nav-cat-item king-nav-cat-travel">
+                    <a href="./travel" class="king-nav-cat-link"><span style="color:#ff386a"><i
+                          class="far fa-map"></i></span>Travel</a>
+                    <span class="king-nav-cat-note">(1)</span>
+                  </li>
+                </ul>
+                <div class="king-nav-cat-clear">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="king-sidebar king-widget-wb">
+          <div style="display: block;
+background-color: #afadc4a3;
+height: 220px;
+width: 100%;
+text-align: center;
+line-height: 220px;
+font-size: 22px;
+margin: auto;
+border-radius: 14px;
+color: #fff;
+border: 2px dashed #ffffff;">Ad Area</div>
+        </div>
+
       </div>
-    </section>
+    </div>
 
     <!-- <section class="most-search">
     <div class="container">
@@ -1928,105 +2265,142 @@
         </form>
       </div>
     </section>
-  </main>
-  <footer class="footer py-3">
-    <div class="container">
-      <div class="grid grid-3">
-        <div class="footer-about">
-          <h4>Finalheights</h4>
-          <p>Finalheights is useful up-to-date online business directory that that seeks to bridge the information gap
-            for both Ugandans and foreigners. Through our platform, we hope to enlighten users on events on where to
-            stay, where to eat and what to do in and around Kampala, Jinja, Entebbe, Fort Portal and other up-country
-            areas of Uganda...<a href="/about-us">ABOUT US</a></p>
-        </div>
-        <div class="footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="https://hereinuganda.com/">Here in Uganda Magazine</a></li>
-            <li><a href="/listings">Advanced Search</a></li>
-            <li><a href="/admin">Manage Listing</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/cookie-policy">Cookie Policy </a></li>
-            <li><a href="/pricing">Pricing </a></li>
-            <li><a href="/terms-and-conditions">Terms and Conditions </a></li>
-          </ul>
-        </div>
-
-        <div class="footer-how-it-works">
-          <h4>How it Works</h4>
-          <ol>
-            <li>1. Create an account</li>
-            <li>2. Register your business</li>
-            <li>3. After approval, your listing will be
-              published on Theeye business directory</li>
-          </ol>
-
-          <div class="footer-social-media my-2">
-            <h4 class="text-center">Social Media Links</h4>
-            <ul class="flex">
-              <li><a class="facebook" href="https://facebook.com/theeyeug" target="_blank"
-                  aria-label="Finalheights' facebook profile">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path
-                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
-                    </path>
-                  </svg></a></li>
-              <li><a class="twitter" href="https://twitter.com/TheeyeUg" target="_blank"
-                  aria-label="Finalheights' twitter profile">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-twitter" viewBox="0 0 16 16">
-                    <path
-                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
-                    </path>
-                  </svg></a></li>
-              <li><a class="pinterest" href="https://pinterest.com/TheeyeUg" target="_blank"
-                  aria-label="Finalheights' pinterest profile">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-pinterest" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z">
-                    </path>
-                  </svg></i></a></li>
-              <li><a class="instagram" href="https://instagram.com/theeye_ug" target="_blank"
-                  aria-label="Finalheights' instagram profile">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                    </path>
-                  </svg></a></li>
-              <li><a class="linkedin" href="https://linkedin.com/company/theeye-uganda" target="_blank"
-                  aria-label="Finalheights' linkedin profile">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
-                    </path>
-                  </svg></a></li>
-              <li><a class="rss" href="/show/rss" target="_blank" aria-label="Finalheights' rss links">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-rss"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z">
-                    </path>
-                    <path
-                      d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z">
-                    </path>
-                  </svg></a></li>
-              <li><a class="sitemap" href="/show/sitemap" aria-label="Finalheights' sitemap">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-diagram-3-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z">
-                    </path>
-                  </svg></a></li>
+    </main>
+    <footer class="footer py-3">
+      <div class="container">
+        <div class="grid grid-3">
+          <div class="footer-about">
+            <h4>Finalheights</h4>
+            <p>Finalheights is useful up-to-date online business directory that that seeks to bridge the information gap
+              for both Ugandans and foreigners. Through our platform, we hope to enlighten users on events on where to
+              stay, where to eat and what to do in and around Kampala, Jinja, Entebbe, Fort Portal and other up-country
+              areas of Uganda...<a href="/about-us">ABOUT US</a></p>
+          </div>
+          <div class="footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="https://hereinuganda.com/">Here in Uganda Magazine</a></li>
+              <li><a href="/listings">Advanced Search</a></li>
+              <li><a href="/admin">Manage Listing</a></li>
+              <li><a href="/pricing">Pricing</a></li>
+              <li><a href="/cookie-policy">Cookie Policy </a></li>
+              <li><a href="/pricing">Pricing </a></li>
+              <li><a href="/terms-and-conditions">Terms and Conditions </a></li>
             </ul>
           </div>
+
+          <div class="footer-how-it-works">
+            <h4>How it Works</h4>
+            <ol>
+              <li>1. Create an account</li>
+              <li>2. Register your business</li>
+              <li>3. After approval, your listing will be
+                published on Theeye business directory</li>
+            </ol>
+
+          </div>
+        </div>
+        <div>
+
+          <p><small>Please note, the default theme may persist for some pages</small></p>
+        </div>
+
+        <div class="my-1">
+          <p>Developed with ❤ by: <a href="https://theeyeug.com/" target="_blank"><b>Mondi </b></a></p>
+
         </div>
       </div>
-      <div>
-        <form id="theme-form" action="/theme-switcher-post" method="post" class="flex">
+    </footer>
+
+
+    <footer class="king-footer">
+      <ul class="socialicons">
+        <li class="facebook"><a href="https://facebook.com/theeyeug" target="_blank" data-toggle="tooltip"
+            data-placement="top" title="" data-original-title="Join our Facebook page !"><i
+              class="fab fa-facebook-f"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/TheeyeUg" target="_blank" data-toggle="tooltip"
+            data-placement="top" title="" data-original-title="Follow us on Twitter !"><i
+              class="fab fa-twitter"></i></a></li>
+        <li class="twitter"><a href="https://linkedin.com/company/theeye-uganda" target="_blank" data-toggle="tooltip"
+            data-placement="top" title="" data-original-title="Follow us on linkedin !"><i
+              class="fab fa-linkedin"></i></a></li>
+        <li class="instagram"><a href="https://instagram.com/theeye_ug" target="_blank" data-toggle="tooltip"
+            data-placement="top" title="" data-original-title="Follow us on Instagram !"><i
+              class="fab fa-instagram"></i></a></li>
+        <li class="youtube"><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title=""
+            data-original-title="Follow us on Youtube !"><i class="fab fa-youtube"></i></a></li>
+        <li class="pinterest"><a href="https://pinterest.com/TheeyeUg" target="_blank" data-toggle="tooltip"
+            data-placement="top" title="" data-original-title="Follow us on Pinterest !"><i
+              class="fab fa-pinterest-p"></i></a></li>
+        <li class="pinterest"><a href="./show/rss" data-toggle="tooltip" data-placement="top" title=""
+            data-original-title="RSS"><i class="fa-solid fa-rss"></i></a></li>
+        <li>
+        <li class="pinterest"><a href="./show/sitemap" data-toggle="tooltip" data-placement="top" title=""
+            data-original-title="Feed"><i class="fa-solid fa-link"></i></a></li>
+        <li>
+          <div data-toggle="modal" data-target="#langsmodal" role="button"
+            style="border: 1px solid #f2f5f8;text-align: center;border-radius: 14px;margin: 0 6px;font-size: 13px;height: 40px;padding:0 10px;line-height: 40px;cursor:pointer;">
+            <i class="fa-solid fa-language"></i> Language
+          </div>
+        </li>
+        <div id="langsmodal" class="king-modal-login">
+          <div class="king-modal-content">
+            <form name="langss" method="post" action="./">
+              <table class="king-form-tall-table">
+                <tbody>
+                  <tr>
+                    <td class="king-form-tall-label">
+                      Language
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="king-form-tall-data">
+                      <label><input name="user_lang" type="radio" value="" checked="" class="king-form-tall-radio">
+                        English (US)</label>
+                      <br>
+                      <label><input name="user_lang" type="radio" value="fr" class="king-form-tall-radio"> French -
+                        Français</label>
+                      <br>
+                      <label><input name="user_lang" type="radio" value="es" class="king-form-tall-radio"> Spanish -
+                        Español</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" class="king-form-tall-buttons">
+                      <input name="lang_switch_save" value="Save" title="" type="submit"
+                        class="king-form-tall-button king-form-tall-button-0">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </ul>
+      <ul class="king-nav-footer-list">
+        <li class="king-nav-footer-item king-nav-footer-feedback">
+          <a href="./feedback" class="king-nav-footer-link">Send feedback</a>
+        </li>
+        <li class="king-nav-footer-item king-nav-footer-custom-5">
+          <a href="./#" class="king-nav-footer-link"><i class="fas fa-address-card"></i>About Us</a>
+        </li>
+        <li class="king-nav-footer-item king-nav-footer-privacy-policy">
+          <a href="./privacy-policy" class="king-nav-footer-link"><i class="fas fa-user-secret"></i>Privacy policy</a>
+        </li>
+        <li class="king-nav-footer-item king-nav-footer-custom-3">
+          <a href="./#" class="king-nav-footer-link"><i class="far fa-life-ring"></i>Support</a>
+        </li>
+        <li class="king-nav-footer-item king-nav-footer-custom-2">
+          <a href="./#" class="king-nav-footer-link"><i class="fas fa-user-md"></i>Careers</a>
+        </li>
+        <li class="king-nav-footer-item king-nav-footer-custom-1">
+          <a href="./#" class="king-nav-footer-link"><i class="far fa-address-card"></i>Testimonials</a>
+        </li>
+      </ul>
+      <div class="king-nav-footer-clear">
+      </div>
+      <div class="king-attribution" id="insertfooter">
+        <form id="theme-form" action="/theme-switcher-post" method="post">
           <select onchange="switchTheme()" name="theme" aria-label="Theme switcher">
             <option value="compact">Compact</option>
             <option value="bizbook">Bizbook</option>
@@ -2034,22 +2408,15 @@
         </form>
         <p><small>Please note, the default theme may persist for some pages</small></p>
       </div>
-
-      <div class="my-1">
-        <p>Developed with ❤ by: <a href="https://theeyeug.com/" target="_blank"><b>Mondi </b></a></p>
-        <script>
-          function switchTheme() {
-            document.getElementById('theme-form-button').innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>`;
-            document.getElementById('theme-form').submit();
-          } 
-        </script>
+      <div class="king-attribution" id="insertfooter">
+        2023 © <a href="/">King MEDIA</a> | All rights reserved
       </div>
-    </div>
-  </footer>
+      <div class="king-footer-clear">
+      </div>
+    </footer>
+    <!-- MODALS START HERE -->
 
-  <!-- MODALS START HERE -->
-
-  <!-- <div id="signin-modal" class="modal">
+    <!-- <div id="signin-modal" class="modal">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header login-modal-header">
@@ -2129,7 +2496,7 @@
     </div>
   </div> -->
 
-  <!-- <div id="category-modal" class="modal">
+    <!-- <div id="category-modal" class="modal">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header login-modal-header">
@@ -2143,7 +2510,7 @@
   </div> -->
 
 
-  <!-- <div id="cookiescript-popup" class="front_inline_36">
+    <!-- <div id="cookiescript-popup" class="front_inline_36">
     <div id="cookiescript-wrapper"> This site uses cookies. By continuing to use this site you agree to our use of
       cookies. <div class="front_inline_37"></div> <a href="/cookie-policy"
         class="btn btn-sm btn-warning">Cookie Policy</a> <a href="#" class="btn btn-sm btn-success agree-cookie">I
@@ -2151,7 +2518,14 @@
       <div id="cookiescript-pixel" class="front_inline_38"></div>
     </div>
   </div> -->
-  <script src="./assets//js/app.js"></script>
+    <script>
+      function switchTheme() {
+        document.getElementById('theme-form-button').innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>`;
+        document.getElementById('theme-form').submit();
+      } 
+    </script>
+
+    <script src="./assets//js/app.js"></script>
 </body>
 
 </html>
