@@ -93,74 +93,104 @@
     </ul>
   </div> -->
 
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <div class="burger" id="burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
+  <header class="fh-headerf">
+    <!-- <div class="container"> -->
+    <nav class="fh-header">
+      <div class="header-left">
+        <div class="fh-left-toggle" data-toggle="dropdown" data-target=".leftmenu" aria-expanded="false" role="button">
+          <span class="left-toggle-line"></span>
         </div>
-        <a href="/" class="brand">Finalheights</a>
-        <span class="overlay"></span>
-        <div class="menu" id="menu">
-          <ul class="menu-inner">
-            <li class="menu-item"><a class="menu-link" href="">Home</a></li>
-            <li class="menu-item"><a class="menu-link" href="/categories">All services</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Explore &dtrif;</a>
-              <ul class="dropdown">
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/jobs">Jobs</a></li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/service-experts">Service Experts</a>
-                </li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/places">Explore Travel</a></li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/news">News &amp; Magazines</a></li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/events">Events</a></li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/products">Products</a></li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/coupons">Coupons &amp; Deals</a></li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/blog-posts">Blogs</a></li>
-                <li class="menu-item"><a class="menu-link" role="menuitem" href="/community">Community</a></li>
-              </ul>
-            </li>
-            <li class="menu-item"><a class="menu-link" href="/locations">Locations</a></li>
-            <li class="menu-item"><a class="menu-link" href="https://hereinuganda.com">Our Magazine</a></li>
-          </ul>
+        <div class="fh-logo">
+          <a href="./" class="fh-logo-link" title="Finalheights">
+            <img class="fh-logol" src="./assets/img/logo_black.png" border="0" alt="Finalheights">
+          </a>
         </div>
-        <a href="/list-business" class="menu-block">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
-          </svg>
-          <!-- <span>Add Listing</span> -->
-        </a>
-        <ul class="">
-          <li class="profile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+      </div>
+      <div class="header-middle">
+        <ul class="fh-nav-head-list">
+          <li class="fh-nav-head-item"><a class="menu-link" href="">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="/categories">All services</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Explore &dtrif;</a>
+            <div class="king-mega-menu">
+              <div class="king-cat">
+                <ul class="king-nav-cat-list">
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem" href="/jobs">Jobs</a></li>
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem"
+                      href="/service-experts">Service
+                      Experts</a>
+                  </li>
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem" href="/places">Explore
+                      Travel</a>
+                  </li>
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem" href="/news">News &amp;
+                      Magazines</a></li>
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem" href="/events">Events</a>
+                  </li>
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem"
+                      href="/products">Products</a></li>
+                  <li class="menu-item"><a class="king-nav-cat-link" role="menuitem" href="/coupons">Coupons &amp;
+                      Deals</a>
+                  </li>
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem"
+                      href="/blog-posts">Blogs</a></li>
+                  <li class="king-nav-cat-item"><a class="king-nav-cat-link" role="menuitem"
+                      href="/community">Community</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="/locations">Locations</a></li>
+          <li class="menu-item"><a class="menu-link" href="https://hereinuganda.com">Our Magazine</a></li>
+        </ul>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li>
+            <a class="reglink dnone" href="./register">Register</a>
+          </li>
+          <li>
+            <div class="reglink" data-toggle="modal" data-target="#loginmodal" role="button" title="Login">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                 <path fill-rule="evenodd"
                   d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
               </svg>
-              <ul class="dropdown">
-                <li class="menu-item"><a class="menu-link" href="#">Login</a></li>
-                <li class="menu-item"><a class="menu-link" href="/signup">Register</a></li>
-                <li class="menu-item">
-                  <form action="/md-switch-mode" method="post"> <input type="hidden" name="csrf_test_name"
-                      value="efbfead7e9517e1291dd088848779d79">
-                    <button class="menu-link" type="submit" name="dark_mode" value="1" class="btn-switch-mode"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#666666"
-                        class="inf-svg-icon bi bi-moon-fill dark-mode-icon" viewBox="0 0 16 16">
-                        <path
-                          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
-                        </path>
-                      </svg></button>
-                  </form>
-                </li>
-              </ul>
+            </div>
           </li>
-          </a>
+          <li>
+            <div class="fh-submit">
+              <span class="fh-add" data-toggle="dropdown" data-target=".fh-submit" aria-expanded="false"
+                role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                </svg></span>
+              <div class="fh-dropdown2">
+                <a href="./list-business" class="fh-addnews"><i class="fas fa-newspaper"></i> Listing</a>
+                <a href="./submit" class="fh-addimg"><i class="fas fa-image"></i> Image</a>
+                <a href="./video" class="fh-addvideo"><i class="fas fa-video"></i> Video</a>
+                <a href="./poll" class="fh-addpoll"><i class="fas fa-align-left"></i> Poll</a>
+                <a href="./list" class="fh-addlist"><i class="fas fa-bars"></i> List</a>
+                <a href="./trivia" class="fh-addtrivia"><i class="fas fa-times"></i> Trivia Quiz</a>
+                <a href="./music" class="fh-addmusic"><i class="fas fa-headphones-alt"></i> Music</a>
+              </div>
+            </div>
+          </li>
+          <li class="search-button"><span data-toggle="dropdown" data-target=".fh-search" aria-expanded="false"
+              class="search-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+              </svg>
+            </span></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
+    <!-- </div> -->
   </header>
   <main>
     <section class="hero">
